@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>SQL命令中的比较运算符和逻辑运算符 | Hexo</title>
+  <title>MySQL数据查询 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一：比较运算符 ————————————————————————————|    运算符      |         含义            ||———————–   ——————————————-||      &amp;gt;      |         大于            ||———————–   ——————————————-||      &amp;lt;      |">
+  <meta name="description" content="1.查询的关键字：SELECT。2.“*”符号代表的是当前查询表中所有的列名，若不使用则将查询列名写出，用“，”分隔。3.① 使用AS关键字定义别名SELECT 字段名1 AS 别名，字段名2 AS 别名…… FROM 表名；② 使用空格为字段定义别名SELECT 字段名1  别名，字段名2  别名 ……FROM 表名；4.使用 LIMIT 限定查询返回行    语法 -&amp;gt; LIMIT [位">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL命令中的比较运算符和逻辑运算符">
-<meta property="og:url" content="http://yoursite.com/2019/10/15/SQL命令中的比较运算符和逻辑运算符/index.html">
+<meta property="og:title" content="MySQL数据查询">
+<meta property="og:url" content="http://yoursite.com/2019/10/16/MySQL数据查询/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一：比较运算符 ————————————————————————————|    运算符      |         含义            ||———————–   ——————————————-||      &amp;gt;      |         大于            ||———————–   ——————————————-||      &amp;lt;      |">
+<meta property="og:description" content="1.查询的关键字：SELECT。2.“*”符号代表的是当前查询表中所有的列名，若不使用则将查询列名写出，用“，”分隔。3.① 使用AS关键字定义别名SELECT 字段名1 AS 别名，字段名2 AS 别名…… FROM 表名；② 使用空格为字段定义别名SELECT 字段名1  别名，字段名2  别名 ……FROM 表名；4.使用 LIMIT 限定查询返回行    语法 -&amp;gt; LIMIT [位">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-15T06:26:33.163Z">
+<meta property="og:updated_time" content="2019-10-16T08:51:48.859Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SQL命令中的比较运算符和逻辑运算符">
-<meta name="twitter:description" content="一：比较运算符 ————————————————————————————|    运算符      |         含义            ||———————–   ——————————————-||      &amp;gt;      |         大于            ||———————–   ——————————————-||      &amp;lt;      |">
+<meta name="twitter:title" content="MySQL数据查询">
+<meta name="twitter:description" content="1.查询的关键字：SELECT。2.“*”符号代表的是当前查询表中所有的列名，若不使用则将查询列名写出，用“，”分隔。3.① 使用AS关键字定义别名SELECT 字段名1 AS 别名，字段名2 AS 别名…… FROM 表名；② 使用空格为字段定义别名SELECT 字段名1  别名，字段名2  别名 ……FROM 表名；4.使用 LIMIT 限定查询返回行    语法 -&amp;gt; LIMIT [位">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,28 +154,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-SQL命令中的比较运算符和逻辑运算符" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL数据查询" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      SQL命令中的比较运算符和逻辑运算符
+      MySQL数据查询
     </h1>
   
 
         
-        <a href="/2019/10/15/SQL命令中的比较运算符和逻辑运算符/" class="archive-article-date">
-  	<time datetime="2019-10-15T06:06:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
+        <a href="/2019/10/16/MySQL数据查询/" class="archive-article-date">
+  	<time datetime="2019-10-16T08:35:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一：比较运算符<br> ————————————————————————————<br>|    运算符      |         含义            |<br>|———————–   ——————————————-|<br>|      &gt;      |         大于            |<br>|———————–   ——————————————-|<br>|      &lt;      |         小于            |<br>|———————–   ——————————————-|<br>|     &gt;=      |       大于等于            |<br>|———————–   ——————————————-|<br>|     &lt;=      |       小于等于            |<br>|———————–   ——————————————-|<br>|      =      |          等于            |<br>|———————–   ——————————————-|<br>|             !=或&lt;&gt;      |        不等于            |<br>|———————–   ——————————————-|<br>|             IS NULL      |       是否为空            |<br>|———————–   ——————————————-|<br>|         IS NOT NULL      |      是否不为空                  |<br>|———————–   ——————————————-|<br>|     IN      |    判断一个值是IN列表中的任意一个值     |<br>|———————–   ——————————————-|<br>|            NOT IN      |  判断一个值不是IN列表中的任意一个值    |<br>|———————–   ——————————————-|<br>|                LIKE      |     通配符匹配        |<br>|———————–   ——————————————-|<br>|       BETWEEN AND   |         判断一个值是否在两个值之间    |<br> ————————————————————————————</p>
-<p>二：逻辑运算符<br>    1.SQL命令支持的逻辑运算符有 And（或者&amp;&amp;）、Or（或者 | | ）和 Not（或者 ！）。<br>    2.And 和 Or 运算符连接条件，Not 否定条件。And 连接条件，并且仅当两个条件都为真时才返回1.<br>    Or 也连接两个条件，但只要其中任意一个为真就返回1。<br>    3.当一个语句中使用了多个逻辑运算符时，运算时先求 Not 的值，然后求 And 的值，最后再求 Or 的值。</p>
+        <p>1.查询的关键字：SELECT。<br>2.“*”符号代表的是当前查询表中所有的列名，若不使用则将查询列名写出，用“，”分隔。<br>3.<br>① 使用AS关键字定义别名<br>SELECT 字段名1 AS 别名，字段名2 AS 别名…… FROM 表名；<br>② 使用空格为字段定义别名<br>SELECT 字段名1  别名，字段名2  别名 ……FROM 表名；<br>4.使用 LIMIT 限定查询返回行<br>    语法 -&gt; LIMIT [位置偏移量] 行数<br>5.Order by 查询排序<br>    asc -&gt; 升序    desc -&gt; 降序</p>
 
       
 
@@ -255,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/15/SQL命令中的比较运算符和逻辑运算符/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/MySQL数据查询/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -269,18 +268,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/10/16/MySQL数据查询/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          MySQL数据查询
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/15/增删改/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">增删改</div>
+    <a href="/2019/10/15/SQL命令中的比较运算符和逻辑运算符/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SQL命令中的比较运算符和逻辑运算符</div>
       <i class="icon-circle-right"></i>
     </a>
   
