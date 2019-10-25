@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>索引和事务 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一.索引1.优点：①.通过创建唯一索引，可以保证数据库表中每一行数据的唯一性；②.可以大大加快数据的查询速度；③.在实现数据的引用完整性方面，可以加速表和表之间的连接。④.在使用分组和排序进行查询数据时，也可以显著减少查询中分组和排序的时间。2.缺点：①.创建索引和维护索引要耗费时间，并且随着数据量的增加所耗费的时间也会增加。②.索引需要占用磁盘空间，除了数据表占数据空间外，每一个索引还要占一定的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="索引和事务">
+<meta property="og:url" content="http://yoursite.com/2019/10/25/索引和事务/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一.索引1.优点：①.通过创建唯一索引，可以保证数据库表中每一行数据的唯一性；②.可以大大加快数据的查询速度；③.在实现数据的引用完整性方面，可以加速表和表之间的连接。④.在使用分组和排序进行查询数据时，也可以显著减少查询中分组和排序的时间。2.缺点：①.创建索引和维护索引要耗费时间，并且随着数据量的增加所耗费的时间也会增加。②.索引需要占用磁盘空间，除了数据表占数据空间外，每一个索引还要占一定的">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-25T01:02:06.021Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="索引和事务">
+<meta name="twitter:description" content="一.索引1.优点：①.通过创建唯一索引，可以保证数据库表中每一行数据的唯一性；②.可以大大加快数据的查询速度；③.在实现数据的引用完整性方面，可以加速表和表之间的连接。④.在使用分组和排序进行查询数据时，也可以显著减少查询中分组和排序的时间。2.缺点：①.创建索引和维护索引要耗费时间，并且随着数据量的增加所耗费的时间也会增加。②.索引需要占用磁盘空间，除了数据表占数据空间外，每一个索引还要占一定的">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-索引和事务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-索引和事务" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/25/索引和事务/">索引和事务</a>
+    <h1 class="article-title" itemprop="name">
+      索引和事务
     </h1>
   
 
@@ -177,6 +179,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -184,16 +207,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/25/索引和事务/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/25/索引和事务/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/21/章结—/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">章结—</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -213,602 +295,14 @@
 
 
 
-
   
-    <article id="post-章结—" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/21/章结—/">章结—</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/21/章结—/" class="archive-article-date">
-  	<time datetime="2019-10-21T07:09:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.模糊查询：模糊查询中的关键字 like 以及通配符%_。<br>2.聚合函数：<br>sum（）求和函数<br>max（）、min（）求最大最小值函数<br>avg（）求平均值函数<br>count（）统计个数函数<br>3.分组查询<br>group by 数据分组查询关键字<br>having  字句分组查询的条件筛选<br>4.多表联合查询<br>select  字段名 from 表名 where 主外键关系</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/21/章结—/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-基础知识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/18/基础知识/">基础知识</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/18/基础知识/" class="archive-article-date">
-  	<time datetime="2019-10-18T01:04:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>–1，介绍表，行，列，字段名<br>  –table,row,clum,clum<br>–2，介绍select，delete，update，insert四个关键字的意义<br>  –select:查询，select clum1,clum2…/* from table [where clum = … ][group by clum(分组依据)][ having 聚合函数判断];<br>  –update:更新，update table set clum1 = … ,clum2 = … [where … ];<br>  –delete:删除，delete from table [where…];<br>  –insert:插入，insert into table[(clum1,clum2…)] values(value1,value2…);<br>–3，介绍关键字where，group by，having,order by<br>  –where，group by，having 全都是过滤关键字，其中where用来过滤普通字段，<br>  –group by用来过滤分组条件，后面要跟上分组依据，就是每…<br>  –having,用来过滤聚合函数<br>    –聚合函数：max()最大值,min()最小值,avg()平均数,sum()总和,count()结果总行数<br>  –order by:将结果按照升序（asc）或者降序（desc）进行排列<br>–4，介绍关键字in，not in，like，通配符<br>  –in:后面跟结果集:in (‘m’,’f’) 、in(5,7,8)<br>  –not in:后面跟结果集，但是求的是不在这个结果集里面的数据<br>  –like:模糊查询，后面跟通配符<br>  –通配符：%：任意长度任意字符   _:一个任何字符   [1,5]:只能是1到5中的一个字符    [^1,5]:不能是1到5之间的一个字符</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/18/基础知识/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-课堂总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/17/课堂总结/">课堂总结</a>
-    </h1>
   
 
-        
-        <a href="/2019/10/17/课堂总结/" class="archive-article-date">
-  	<time datetime="2019-10-17T13:16:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.SQL中的运算符<br>算术运算符、关系运算符、逻辑运算符、赋值运算符<br>2.使用SQL语句增、删、改数据</p>
-<ul>
-<li>insert 插入数据</li>
-<li>update 修改数据</li>
-<li>delete 删除数据 </li>
-<li>truncate 删除数据</li>
-</ul>
-<p>3.数据简单查询：数据查询中的条件语句关键字<br>4.条件查询<br>①.where字句限制查询结果；<br>②.distinct用来消除重复行；<br>③.limit限定查询返回行<br>5.使用orderby进行查询排序<br>升序-&gt;asc<br>降序-&gt;desc<br>6.内置函数<br>字符串函数、日期函数、数学函数、</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/17/课堂总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/17/总结/">总结</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/17/总结/" class="archive-article-date">
-  	<time datetime="2019-10-17T13:01:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.SQL中的运算符<br>算术运算符、关系运算符、逻辑运算符、赋值运算符<br>2.使用SQL语句增、删、改数据</p>
-<ul>
-<li>insert 插入数据</li>
-<li>update 修改数据</li>
-<li>delete 删除数据 </li>
-<li>truncate 删除数据</li>
-</ul>
-<p>3.数据简单查询：数据查询中的条件语句关键字<br>4.条件查询<br>①.where字句限制查询结果；<br>②.distinct用来消除重复行；<br>③.limit限定查询返回行<br>5.使用orderby进行查询排序<br>升序-&gt;asc<br>降序-&gt;desc<br>6.内置函数<br>字符串函数、日期函数、数学函数、系统函数。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/17/总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-MySQL数据查询" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/16/MySQL数据查询/">MySQL数据查询</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/16/MySQL数据查询/" class="archive-article-date">
-  	<time datetime="2019-10-16T08:35:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.查询的关键字：SELECT。<br>2.“*”符号代表的是当前查询表中所有的列名，若不使用则将查询列名写出，用“，”分隔。<br>3.<br>① 使用AS关键字定义别名<br>SELECT 字段名1 AS 别名，字段名2 AS 别名…… FROM 表名；<br>② 使用空格为字段定义别名<br>SELECT 字段名1  别名，字段名2  别名 ……FROM 表名；<br>4.使用 LIMIT 限定查询返回行<br>    语法 -&gt; LIMIT [位置偏移量] 行数<br>5.Order by 查询排序<br>    asc -&gt; 升序    desc -&gt; 降序</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/16/MySQL数据查询/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-SQL命令中的比较运算符和逻辑运算符" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/15/SQL命令中的比较运算符和逻辑运算符/">SQL命令中的比较运算符和逻辑运算符</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/15/SQL命令中的比较运算符和逻辑运算符/" class="archive-article-date">
-  	<time datetime="2019-10-15T06:06:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一：比较运算符<br> ————————————————————————————<br>|    运算符      |         含义            |<br>|———————–   ——————————————-|<br>|      &gt;      |         大于            |<br>|———————–   ——————————————-|<br>|      &lt;      |         小于            |<br>|———————–   ——————————————-|<br>|     &gt;=      |       大于等于            |<br>|———————–   ——————————————-|<br>|     &lt;=      |       小于等于            |<br>|———————–   ——————————————-|<br>|      =      |          等于            |<br>|———————–   ——————————————-|<br>|             !=或&lt;&gt;      |        不等于            |<br>|———————–   ——————————————-|<br>|             IS NULL      |       是否为空            |<br>|———————–   ——————————————-|<br>|         IS NOT NULL      |      是否不为空                  |<br>|———————–   ——————————————-|<br>|     IN      |    判断一个值是IN列表中的任意一个值     |<br>|———————–   ——————————————-|<br>|            NOT IN      |  判断一个值不是IN列表中的任意一个值    |<br>|———————–   ——————————————-|<br>|                LIKE      |     通配符匹配        |<br>|———————–   ——————————————-|<br>|       BETWEEN AND   |         判断一个值是否在两个值之间    |<br> ————————————————————————————</p>
-<p>二：逻辑运算符<br>    1.SQL命令支持的逻辑运算符有 And（或者&amp;&amp;）、Or（或者 | | ）和 Not（或者 ！）。<br>    2.And 和 Or 运算符连接条件，Not 否定条件。And 连接条件，并且仅当两个条件都为真时才返回1.<br>    Or 也连接两个条件，但只要其中任意一个为真就返回1。<br>    3.当一个语句中使用了多个逻辑运算符时，运算时先求 Not 的值，然后求 And 的值，最后再求 Or 的值。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/15/SQL命令中的比较运算符和逻辑运算符/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="w-增删改" class="article article-type-w  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/15/增删改/">增删改</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/15/增删改/" class="archive-article-date">
-  	<time datetime="2019-10-15T05:50:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>操作MySQL表中数据:<br>1.增加：INSERT INTO 表名 （ 字段1，字段2，字段3…… ）<br>       VALUES ( 值1，值2，值3 …… );<br>2.删除：DELETE FROM 表名 WHERE 条件字段 = 值；</p>
-<p>3.修改：UPDATE 表名 SET 要更新的字段 = 值<br>            WHERE 条件字段 = 值；</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/15/增删改/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-博客实验" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/11/博客实验/">博客实验</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/11/博客实验/" class="archive-article-date">
-  	<time datetime="2019-10-11T05:13:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="这是我的第一篇博客，实验我的博客是否搭建成功"><a href="#这是我的第一篇博客，实验我的博客是否搭建成功" class="headerlink" title="这是我的第一篇博客，实验我的博客是否搭建成功"></a>这是我的第一篇博客，实验我的博客是否搭建成功</h1>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/11/博客实验/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/11/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-11T04:42:12.329Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/11/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -831,8 +325,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
